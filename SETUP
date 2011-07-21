@@ -1,0 +1,23 @@
+#git
+Global setup:
+
+ Set up git
+  git config --global user.name "Your Name"
+  git config --global user.email kopijawa@gmail.com
+  Add your public key
+        
+
+Next steps:
+
+  mkdir vaadinWeb
+  cd vaadinWeb
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:kopijawa/vaadinWeb.git OR https://kopijawa@github.com/kopijawa/vaadinWeb.git
+  git push -u origin master
+      
+
+#maven
+mvn archetype:generate -DarchetypeGroupId=com.vaadin -DarchetypeArtifactId=vaadin-archetype-clean -DarchetypeVersion=LATEST -DgroupId=org.dhydrated -DartifactId=myVaadin -Dversion=1.0 -Dpackaging=war
